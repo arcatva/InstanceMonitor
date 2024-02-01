@@ -1,0 +1,22 @@
+.textfield{
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    line-height: inherit;
+    box-sizing: border-box;
+    border-style: solid;
+    display: block;
+    width: 12rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    border-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    padding: 0.5rem 0.75rem;
+}
+
+.textfield:hover{
+    border-color: darkgray;
+}

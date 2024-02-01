@@ -1,0 +1,35 @@
+.button{
+    padding: 8px 14px;
+    border: 2px solid transparent;
+    background-color: white;
+    animation: ease-in-out;
+    animation-duration: 2s;
+    border-radius: 20px;
+    margin: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.button:hover{
+    padding: 8px 14px;
+    border: 2px solid white;
+    background-color: #eeeeee;
+    animation: ease-in-out;
+    animation-duration: 2s;
+    border-radius: 20px;
+    margin: 4px;
+
+}
+
+.button:active{
+    padding: 8px 14px;
+    border: 2px solid lightgray;
+    background-color: gainsboro;
+    animation: ease-in-out;
+    animation-duration: 2s;
+    border-radius: 20px;
+    margin: 4px;
+
+}

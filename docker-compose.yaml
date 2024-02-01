@@ -1,0 +1,32 @@
+services:
+  go-server:
+    restart: always
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8443:8443"
+    depends_on:
+      - postgres
+      - influxdb
+
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: md5
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 
+    expose:
+      - "5432"
+
+  influxdb:
+    image: influxdb
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: 
+      DOCKER_INFLUXDB_INIT_PASSWORD: 
+      DOCKER_INFLUXDB_INIT_ORG: 
+      DOCKER_INFLUXDB_INIT_BUCKET: default_bucket
+    ports:
+      - "8086:8086"
