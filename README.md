@@ -1,0 +1,2 @@
+A web dashboard that can monitor the cpu_usage, disk_usage, memory_usage of multiple instances (could be VMs or bare-metal machines).
+This project comprises 4 main parts: A backend web server based on Go-Fiber; A frontend SPA based on React; Two databases: A PostgreSQL for saving user information including crypted credentials and an InfluxDB as a time-series database for receiving the metrics collected from collectors; Collector: Based on Python psutils to export metrics from OS and supplemented by a Bash automation script.
